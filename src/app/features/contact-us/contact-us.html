@@ -1,0 +1,23 @@
+<div class="contact-container">
+  <h2>Contact Us</h2>
+  <div class="contact-info">
+    <p><strong>Address:</strong> Address: 123 St Augustine, New York City, United State</p>
+    <p><strong>Email:</strong> info&#64;mysite.com</p>
+    <p><strong>Phone:</strong> +234 907 696 3763</p>
+  </div>
+  <form (ngSubmit)="onSubmit()" class="contact-form">
+    <div>
+      <label for="name">Name:</label>
+      <input id="name" [(ngModel)]="contact.name" name="name" required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" type="email" [(ngModel)]="contact.email" name="email" required>
+    </div>
+    <div>
+      <label for="message">Message:</label>
+      <textarea id="message" [(ngModel)]="contact.message" name="message" required></textarea>
+    </div>
+    <button type="submit">Send Message</button>
+  </form>
+</div>
